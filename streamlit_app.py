@@ -52,7 +52,7 @@ def get_fruit_load_list():
         return my_cur.fetchall()
  
 def insert_row_snowflake(new_fruit):
-    my_cur.execute("insert into fruit_load_list values ('" + new_fruit "')")
+    my_cur.execute("insert into fruit_load_list values ('" + new_fruit + "')")
     return "Thanks for adding " + new_fruit
 
 # add a button to load the fruit 
