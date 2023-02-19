@@ -53,7 +53,7 @@ def get_fruit_load_list():
  
 def insert_row_snowflake(new_fruit):
     my_insert_sql = "insert into fruit_load_list values ('" + new_fruit + "')"
-    stremlit.text(my_insert_sql)
+    streamlit.text(my_insert_sql)
     my_cur.execute(my_insert_sql)
     return "Thanks for adding " + new_fruit
 
